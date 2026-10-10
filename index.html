@@ -5,40 +5,40 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>CheckDiga Pro — افحص سيارتك من هاتفك</title>
 <meta name="description" content="جهاز فحص سيارات احترافي — 13,886 كود عطل">
-<meta name="theme-color" content="#0a0f1e">
+<meta name="theme-color" content="#0a0a0a">
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800;900&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com/3.4.17"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-body{font-family:'Cairo',sans-serif;background:#0a0f1e;color:#f1f5f9;margin:0}
-.grad-txt{background:linear-gradient(120deg,#3b82f6,#8b5cf6,#ec4899);-webkit-background-clip:text;background-clip:text;color:transparent}
+body{font-family:'Cairo',sans-serif;background:#0a0a0a;color:#f1f5f9;margin:0}
+.grad-txt{background:linear-gradient(120deg,#fbbf24,#fef3c7,#e5e7eb,#f59e0b);-webkit-background-clip:text;background-clip:text;color:transparent}
 .btn-pulse{animation:pl 2.5s ease-in-out infinite}
-@keyframes pl{0%,100%{box-shadow:0 0 0 0 rgba(59,130,246,.7)}50%{box-shadow:0 0 0 20px rgba(59,130,246,0)}}
+@keyframes pl{0%,100%{box-shadow:0 0 0 0 rgba(251,191,36,.7)}50%{box-shadow:0 0 0 20px rgba(251,191,36,0)}}
 .card-hover{transition:.3s}
-.card-hover:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(59,130,246,.15)}
+.card-hover:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(251,191,36,.15)}
 .blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:.3;pointer-events:none}
-.step-num{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900;color:#fff;margin:0 auto 12px}
+.step-num{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900;color:#0a0a0a;margin:0 auto 12px}
 .price-card{position:relative;transition:.35s;display:flex;flex-direction:column}
 .price-card:hover{transform:translateY(-8px)}
-.spec-badge{display:inline-block;background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.3);color:#93c5fd;font-size:10px;font-weight:700;padding:3px 8px;border-radius:6px;margin:2px}
-.faq-item{border:1px solid #1e293b;border-radius:14px;overflow:hidden;margin-bottom:10px;background:#0f172a}
+.spec-badge{display:inline-block;background:rgba(251,191,36,.12);border:1px solid rgba(251,191,36,.3);color:#fcd34d;font-size:10px;font-weight:700;padding:3px 8px;border-radius:6px;margin:2px}
+.faq-item{border:1px solid #1f1f1f;border-radius:14px;overflow:hidden;margin-bottom:10px;background:#111111}
 .faq-q{width:100%;text-align:right;padding:18px 20px;background:none;border:none;color:#f1f5f9;font-family:inherit;font-size:15px;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease;padding:0 20px;color:#94a3b8;font-size:14px;line-height:1.8}
 .faq-item.open .faq-a{max-height:400px;padding:0 20px 20px}
 .faq-item.open .faq-arrow{transform:rotate(180deg)}
 .faq-arrow{transition:.3s}
-body::before{content:'';position:fixed;inset:0;background:radial-gradient(circle at 20% 20%,rgba(59,130,246,.08),transparent 50%),radial-gradient(circle at 80% 80%,rgba(139,92,246,.08),transparent 50%);pointer-events:none;z-index:0}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(circle at 20% 20%,rgba(251,191,36,.07),transparent 50%),radial-gradient(circle at 80% 80%,rgba(229,231,235,.05),transparent 50%);pointer-events:none;z-index:0}
 nav,footer,section{position:relative;z-index:1}
 </style>
 </head>
 <body>
 
 <!-- ═══ NAV ═══ -->
-<nav class="sticky top-0 z-50 backdrop-blur-lg bg-[#0a0f1e]/85 border-b border-slate-800">
+<nav class="sticky top-0 z-50 backdrop-blur-lg bg-[#0a0a0a]/85 border-b border-zinc-800">
 <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
 <div class="flex items-center gap-2">
-<i class="fa-solid fa-wrench text-blue-400 text-2xl"></i>
+<i class="fa-solid fa-wrench text-amber-400 text-2xl"></i>
 <span class="text-xl font-black">CheckDiga</span>
 <span class="bg-gradient-to-br from-amber-400 to-amber-500 text-black text-[10px] font-black px-2 py-0.5 rounded-full">PRO</span>
 </div>
@@ -50,10 +50,10 @@ nav,footer,section{position:relative;z-index:1}
 
 <!-- ═══ HERO ═══ -->
 <section class="relative pt-12 pb-16 px-4 overflow-hidden">
-<div class="blob bg-blue-500 w-72 h-72 -top-20 -right-20"></div>
-<div class="blob bg-purple-500 w-72 h-72 top-40 -left-20"></div>
+<div class="blob bg-amber-500 w-72 h-72 -top-20 -right-20"></div>
+<div class="blob bg-zinc-400 w-72 h-72 top-40 -left-20"></div>
 <div class="max-w-6xl mx-auto text-center">
-<div class="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/30 rounded-full px-4 py-1.5 text-xs font-bold text-purple-300 mb-6">
+<div class="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 rounded-full px-4 py-1.5 text-xs font-bold text-amber-300 mb-6">
 <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
 متوفر الآن — توصيل لكل الولايات
 </div>
@@ -66,29 +66,29 @@ nav,footer,section{position:relative;z-index:1}
 <b class="text-white">+13,886 كود عطل</b> — بالعربية.
 </p>
 <div class="flex flex-col sm:flex-row gap-3 justify-center mb-10">
-<a href="https://wa.me/213696799945?text=السلام عليكم، أريد شراء جهاز فحص السيارات" target="_blank" class="btn-pulse bg-gradient-to-l from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-black px-8 py-4 rounded-2xl flex items-center justify-center gap-3 text-lg transition">
+<a href="https://wa.me/213696799945?text=السلام عليكم، أريد شراء جهاز فحص السيارات" target="_blank" class="btn-pulse bg-gradient-to-l from-amber-500 via-yellow-400 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-black font-black px-8 py-4 rounded-2xl flex items-center justify-center gap-3 text-lg transition shadow-lg shadow-amber-500/20">
 <i class="fa-brands fa-whatsapp text-2xl"></i> اطلب جهازك الآن
 </a>
-<a href="#how" class="bg-slate-800/80 hover:bg-slate-700 border-2 border-slate-700 text-white font-bold px-8 py-4 rounded-2xl flex items-center justify-center gap-2 text-lg transition">
+<a href="#how" class="bg-zinc-900/80 hover:bg-zinc-800 border-2 border-zinc-700 hover:border-amber-500/50 text-white font-bold px-8 py-4 rounded-2xl flex items-center justify-center gap-2 text-lg transition">
 <i class="fa-solid fa-circle-play"></i> كيف يعمل؟
 </a>
 </div>
 <div class="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-gray-400 mb-10">
-<span class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> توصيل سريع</span>
-<span class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> دعم فني</span>
-<span class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> دفع عند الاستلام</span>
+<span class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> توصيل سريع</span>
+<span class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> دعم فني</span>
+<span class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> دفع عند الاستلام</span>
 </div>
 <div class="max-w-3xl mx-auto">
 <div class="relative">
-<div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 blur-3xl opacity-25 rounded-3xl"></div>
-<img src="using_phone.jpeg" alt="فحص السيارة" class="relative w-full h-72 object-cover rounded-3xl border-2 border-slate-700 shadow-2xl" loading="eager">
+<div class="absolute inset-0 bg-gradient-to-r from-amber-500 to-yellow-500 blur-3xl opacity-25 rounded-3xl"></div>
+<img src="using_phone.jpeg" alt="فحص السيارة" class="relative w-full h-72 object-cover rounded-3xl border-2 border-zinc-700 shadow-2xl" loading="eager">
 </div>
 </div>
 </div>
 </section>
 
 <!-- ═══ STATS BAR ═══ -->
-<section class="py-10 px-4 bg-slate-900/50 border-y border-slate-800">
+<section class="py-10 px-4 bg-zinc-900/50 border-y border-zinc-800">
 <div class="max-w-6xl mx-auto grid grid-cols-3 gap-4 text-center">
 <div><div class="text-4xl md:text-5xl font-black grad-txt">13,886</div><div class="text-xs text-gray-500 font-bold mt-1">كود عطل</div></div>
 <div><div class="text-4xl md:text-5xl font-black grad-txt">10</div><div class="text-xs text-gray-500 font-bold mt-1">بروتوكولات</div></div>
@@ -102,29 +102,29 @@ nav,footer,section{position:relative;z-index:1}
 <h2 class="text-3xl md:text-4xl font-black text-center mb-3">هل تعاني من هذه المشاكل؟</h2>
 <p class="text-gray-400 text-center mb-12">كل مرة نفس القصة...</p>
 <div class="grid md:grid-cols-3 gap-5">
-<div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6"><div class="text-5xl mb-4">😰</div><div class="font-bold text-lg mb-2">لمبة المحرك مضاءة</div><div class="text-sm text-gray-400 leading-relaxed">لا تعرف ما السبب، تخاف تسوقها للورشة وتُدفع مبلغ كبير بدون داعٍ.</div></div>
-<div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6"><div class="text-5xl mb-4">💸</div><div class="font-bold text-lg mb-2">فاتورة الورشة مرتفعة</div><div class="text-sm text-gray-400 leading-relaxed">كل فحص = 3,000 - 5,000 دج. مجرد ربط الجهاز بالكمبيوتر!</div></div>
-<div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-6"><div class="text-5xl mb-4">🚗</div><div class="font-bold text-lg mb-2">قبل شراء سيارة مستعملة</div><div class="text-sm text-gray-400 leading-relaxed">كيف تتأكد أن السيارة سليمة؟ لن تعرف إلا بعد الشراء!</div></div>
+<div class="card-hover bg-zinc-900 border border-zinc-800 rounded-2xl p-6"><div class="text-5xl mb-4">😰</div><div class="font-bold text-lg mb-2">لمبة المحرك مضاءة</div><div class="text-sm text-gray-400 leading-relaxed">لا تعرف ما السبب، تخاف تسوقها للورشة وتُدفع مبلغ كبير بدون داعٍ.</div></div>
+<div class="card-hover bg-zinc-900 border border-zinc-800 rounded-2xl p-6"><div class="text-5xl mb-4">💸</div><div class="font-bold text-lg mb-2">فاتورة الورشة مرتفعة</div><div class="text-sm text-gray-400 leading-relaxed">كل فحص = 3,000 - 5,000 دج. مجرد ربط الجهاز بالكمبيوتر!</div></div>
+<div class="card-hover bg-zinc-900 border border-zinc-800 rounded-2xl p-6"><div class="text-5xl mb-4">🚗</div><div class="font-bold text-lg mb-2">قبل شراء سيارة مستعملة</div><div class="text-sm text-gray-400 leading-relaxed">كيف تتأكد أن السيارة سليمة؟ لن تعرف إلا بعد الشراء!</div></div>
 </div>
 </div>
 </section>
 
 <!-- ═══ SOLUTION ═══ -->
-<section class="py-20 px-4 bg-slate-900/30">
+<section class="py-20 px-4 bg-zinc-900/30">
 <div class="max-w-6xl mx-auto">
 <div class="text-center mb-14">
-<div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-full px-4 py-1.5 text-xs font-bold text-emerald-300 mb-4"><i class="fa-solid fa-lightbulb"></i> الحل</div>
+<div class="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 rounded-full px-4 py-1.5 text-xs font-bold text-amber-300 mb-4"><i class="fa-solid fa-lightbulb"></i> الحل</div>
 <h2 class="text-3xl md:text-4xl font-black mb-3">جهاز صغير — نتائج احترافية</h2>
 <p class="text-gray-400 max-w-2xl mx-auto">جهاز ELM327 احترافي يُوصَل بسيارتك، ويفتح لك عالم التشخيص من هاتفك</p>
 </div>
 <div class="grid md:grid-cols-2 gap-8 items-center">
-<div><img src="elm327.jpeg" alt="جهاز ELM327" class="w-full h-72 object-contain rounded-3xl border-2 border-slate-700 shadow-2xl bg-white p-6" loading="lazy"></div>
+<div><img src="elm327.jpeg" alt="جهاز ELM327" class="w-full h-72 object-contain rounded-3xl border-2 border-zinc-700 shadow-2xl bg-white p-6" loading="lazy"></div>
 <div class="space-y-4">
-<div class="flex gap-4"><div class="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-bolt text-blue-400 text-xl"></i></div><div><div class="font-bold mb-1">اتصال فوري</div><div class="text-sm text-gray-400">Bluetooth LE 4.0 — يعمل مع Android و iPhone</div></div></div>
-<div class="flex gap-4"><div class="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-database text-purple-400 text-xl"></i></div><div><div class="font-bold mb-1">13,886 كود عطل</div><div class="text-sm text-gray-400">قاعدة بيانات ضخمة بالعربية مع شرح كل عطل</div></div></div>
-<div class="flex gap-4"><div class="w-12 h-12 rounded-xl bg-emerald-500/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-gauge-high text-emerald-400 text-xl"></i></div><div><div class="font-bold mb-1">معلومات مباشرة</div><div class="text-sm text-gray-400">RPM، السرعة، حرارة المحرك، الوقود — بشكل حي</div></div></div>
-<div class="flex gap-4"><div class="w-12 h-12 rounded-xl bg-amber-500/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-car-battery text-amber-400 text-xl"></i></div><div><div class="font-bold mb-1">اختبار البطارية والدينامو</div><div class="text-sm text-gray-400">اعرف إن كانت بطاريتك ضعيفة قبل أن تخذلك</div></div></div>
-<div class="flex gap-4"><div class="w-12 h-12 rounded-xl bg-pink-500/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-file-pdf text-pink-400 text-xl"></i></div><div><div class="font-bold mb-1">تقرير PDF</div><div class="text-sm text-gray-400">شارك نتائج الفحص مع الميكانيكي عبر واتساب</div></div></div>
+<div class="flex gap-4"><div class="w-12 h-12 rounded-xl bg-amber-500/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-bolt text-amber-400 text-xl"></i></div><div><div class="font-bold mb-1">اتصال فوري</div><div class="text-sm text-gray-400">Bluetooth LE 4.0 — يعمل مع Android و iPhone</div></div></div>
+<div class="flex gap-4"><div class="w-12 h-12 rounded-xl bg-zinc-400/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-database text-zinc-300 text-xl"></i></div><div><div class="font-bold mb-1">13,886 كود عطل</div><div class="text-sm text-gray-400">قاعدة بيانات ضخمة بالعربية مع شرح كل عطل</div></div></div>
+<div class="flex gap-4"><div class="w-12 h-12 rounded-xl bg-amber-500/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-gauge-high text-amber-400 text-xl"></i></div><div><div class="font-bold mb-1">معلومات مباشرة</div><div class="text-sm text-gray-400">RPM، السرعة، حرارة المحرك، الوقود — بشكل حي</div></div></div>
+<div class="flex gap-4"><div class="w-12 h-12 rounded-xl bg-yellow-500/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-car-battery text-yellow-400 text-xl"></i></div><div><div class="font-bold mb-1">اختبار البطارية والدينامو</div><div class="text-sm text-gray-400">اعرف إن كانت بطاريتك ضعيفة قبل أن تخذلك</div></div></div>
+<div class="flex gap-4"><div class="w-12 h-12 rounded-xl bg-zinc-400/20 flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-file-pdf text-zinc-300 text-xl"></i></div><div><div class="font-bold mb-1">تقرير PDF</div><div class="text-sm text-gray-400">شارك نتائج الفحص مع الميكانيكي عبر واتساب</div></div></div>
 </div>
 </div>
 </div>
@@ -138,27 +138,27 @@ nav,footer,section{position:relative;z-index:1}
 <p class="text-gray-400">من صندوق البريد إلى أول فحص في 5 دقائق</p>
 </div>
 <div class="grid md:grid-cols-3 gap-8">
-<div class="text-center"><div class="step-num" style="background:linear-gradient(135deg,#3b82f6,#2563eb)">1</div><img src="elm327.jpeg" alt="الجهاز" class="w-full h-48 object-contain rounded-2xl bg-white p-4 mb-4" loading="lazy"><div class="font-bold text-lg mb-2 text-blue-300">استلم الجهاز</div><div class="text-sm text-gray-400 leading-relaxed">يأتيك مع كود التفعيل<br>مطبوع على العلبة</div></div>
-<div class="text-center"><div class="step-num" style="background:linear-gradient(135deg,#8b5cf6,#7c3aed)">2</div><img src="obd_port.png" alt="منفذ OBD" class="w-full h-48 object-cover rounded-2xl mb-4" loading="lazy"><div class="font-bold text-lg mb-2 text-purple-300">وصّله بالسيارة</div><div class="text-sm text-gray-400 leading-relaxed">في منفذ OBD-II<br>تحت المقود عادةً</div></div>
-<div class="text-center"><div class="step-num" style="background:linear-gradient(135deg,#10b981,#059669)">3</div><img src="using_phone.jpeg" alt="الهاتف" class="w-full h-48 object-cover rounded-2xl mb-4" loading="lazy"><div class="font-bold text-lg mb-2 text-emerald-300">افحص من هاتفك</div><div class="text-sm text-gray-400 leading-relaxed">افتح موقع CheckDiga<br>واقرأ الأعطال فوراً</div></div>
+<div class="text-center"><div class="step-num" style="background:linear-gradient(135deg,#fbbf24,#d97706)">1</div><img src="elm327.jpeg" alt="الجهاز" class="w-full h-48 object-contain rounded-2xl bg-white p-4 mb-4" loading="lazy"><div class="font-bold text-lg mb-2 text-amber-300">استلم الجهاز</div><div class="text-sm text-gray-400 leading-relaxed">يأتيك مع كود التفعيل<br>مطبوع على العلبة</div></div>
+<div class="text-center"><div class="step-num" style="background:linear-gradient(135deg,#e5e7eb,#9ca3af)">2</div><img src="obd_port.png" alt="منفذ OBD" class="w-full h-48 object-cover rounded-2xl mb-4" loading="lazy"><div class="font-bold text-lg mb-2 text-zinc-300">وصّله بالسيارة</div><div class="text-sm text-gray-400 leading-relaxed">في منفذ OBD-II<br>تحت المقود عادةً</div></div>
+<div class="text-center"><div class="step-num" style="background:linear-gradient(135deg,#fde68a,#f59e0b)">3</div><img src="using_phone.jpeg" alt="الهاتف" class="w-full h-48 object-cover rounded-2xl mb-4" loading="lazy"><div class="font-bold text-lg mb-2 text-yellow-300">افحص من هاتفك</div><div class="text-sm text-gray-400 leading-relaxed">افتح موقع CheckDiga<br>واقرأ الأعطال فوراً</div></div>
 </div>
 </div>
 </section>
 
 <!-- ═══ FEATURES GRID ═══ -->
-<section class="py-20 px-4 bg-slate-900/30">
+<section class="py-20 px-4 bg-zinc-900/30">
 <div class="max-w-6xl mx-auto">
 <h2 class="text-3xl md:text-4xl font-black text-center mb-3">كل ما تحتاجه في تطبيق واحد</h2>
 <p class="text-gray-400 text-center mb-12">ميزات احترافية بمعايير عالمية</p>
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-<div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-5 text-center"><div class="text-4xl mb-3">🔍</div><div class="font-bold text-sm mb-1">قراءة الأعطال</div><div class="text-[11px] text-gray-500">P، B، C، U</div></div>
-<div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-5 text-center"><div class="text-4xl mb-3">🧠</div><div class="font-bold text-sm mb-1">تحليل ذكي</div><div class="text-[11px] text-gray-500">يربط الأعراض بالأسباب</div></div>
-<div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-5 text-center"><div class="text-4xl mb-3">📊</div><div class="font-bold text-sm mb-1">قياسات حية</div><div class="text-[11px] text-gray-500">RPM، سرعة، حرارة</div></div>
-<div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-5 text-center"><div class="text-4xl mb-3">🌿</div><div class="font-bold text-sm mb-1">جاهزية الانبعاثات</div><div class="text-[11px] text-gray-500">قبل الفحص الفني</div></div>
-<div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-5 text-center"><div class="text-4xl mb-3">🔋</div><div class="font-bold text-sm mb-1">اختبار البطارية</div><div class="text-[11px] text-gray-500">3 مراحل دقيقة</div></div>
-<div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-5 text-center"><div class="text-4xl mb-3">🗑️</div><div class="font-bold text-sm mb-1">مسح الأعطال</div><div class="text-[11px] text-gray-500">بعد الإصلاح</div></div>
-<div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-5 text-center"><div class="text-4xl mb-3">📄</div><div class="font-bold text-sm mb-1">تقرير PDF</div><div class="text-[11px] text-gray-500">للميكانيكي</div></div>
-<div class="card-hover bg-slate-900 border border-slate-800 rounded-2xl p-5 text-center"><div class="text-4xl mb-3">🚨</div><div class="font-bold text-sm mb-1">مؤشر صحة</div><div class="text-[11px] text-gray-500">من 0 إلى 100</div></div>
+<div class="card-hover bg-zinc-900 border border-zinc-800 rounded-2xl p-5 text-center"><div class="text-4xl mb-3">🔍</div><div class="font-bold text-sm mb-1">قراءة الأعطال</div><div class="text-[11px] text-gray-500">P، B، C، U</div></div>
+<div class="card-hover bg-zinc-900 border border-zinc-800 rounded-2xl p-5 text-center"><div class="text-4xl mb-3">🧠</div><div class="font-bold text-sm mb-1">تحليل ذكي</div><div class="text-[11px] text-gray-500">يربط الأعراض بالأسباب</div></div>
+<div class="card-hover bg-zinc-900 border border-zinc-800 rounded-2xl p-5 text-center"><div class="text-4xl mb-3">📊</div><div class="font-bold text-sm mb-1">قياسات حية</div><div class="text-[11px] text-gray-500">RPM، سرعة، حرارة</div></div>
+<div class="card-hover bg-zinc-900 border border-zinc-800 rounded-2xl p-5 text-center"><div class="text-4xl mb-3">🌿</div><div class="font-bold text-sm mb-1">جاهزية الانبعاثات</div><div class="text-[11px] text-gray-500">قبل الفحص الفني</div></div>
+<div class="card-hover bg-zinc-900 border border-zinc-800 rounded-2xl p-5 text-center"><div class="text-4xl mb-3">🔋</div><div class="font-bold text-sm mb-1">اختبار البطارية</div><div class="text-[11px] text-gray-500">3 مراحل دقيقة</div></div>
+<div class="card-hover bg-zinc-900 border border-zinc-800 rounded-2xl p-5 text-center"><div class="text-4xl mb-3">🗑️</div><div class="font-bold text-sm mb-1">مسح الأعطال</div><div class="text-[11px] text-gray-500">بعد الإصلاح</div></div>
+<div class="card-hover bg-zinc-900 border border-zinc-800 rounded-2xl p-5 text-center"><div class="text-4xl mb-3">📄</div><div class="font-bold text-sm mb-1">تقرير PDF</div><div class="text-[11px] text-gray-500">للميكانيكي</div></div>
+<div class="card-hover bg-zinc-900 border border-zinc-800 rounded-2xl p-5 text-center"><div class="text-4xl mb-3">🚨</div><div class="font-bold text-sm mb-1">مؤشر صحة</div><div class="text-[11px] text-gray-500">من 0 إلى 100</div></div>
 </div>
 </div>
 </section>
@@ -173,7 +173,7 @@ nav,footer,section{position:relative;z-index:1}
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
 
 <!-- ─── كود التفعيل فقط ─── -->
-<div class="price-card bg-slate-900 border-2 border-slate-800 rounded-3xl p-6">
+<div class="price-card bg-zinc-900 border-2 border-zinc-800 hover:border-amber-500/50 rounded-3xl p-6">
 <div class="text-center mb-5">
 <div class="text-sm text-gray-400 font-bold mb-2">🔑 عندك جهاز؟</div>
 <div class="text-xl font-black mb-1">كود التفعيل فقط</div>
@@ -182,26 +182,26 @@ nav,footer,section{position:relative;z-index:1}
 <div class="text-xs text-gray-500">دج / مرة واحدة</div>
 </div>
 <ul class="space-y-2 text-xs mb-4 flex-1">
-<li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1 text-[10px]"></i><span>كود تفعيل مدى الحياة</span></li>
-<li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1 text-[10px]"></i><span>13,886 كود عطل بالعربية</span></li>
-<li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1 text-[10px]"></i><span>كل الميزات مفتوحة</span></li>
-<li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1 text-[10px]"></i><span>تحديثات مجانية للأبد</span></li>
+<li class="flex gap-2"><i class="fa-solid fa-check text-amber-400 mt-1 text-[10px]"></i><span>كود تفعيل مدى الحياة</span></li>
+<li class="flex gap-2"><i class="fa-solid fa-check text-amber-400 mt-1 text-[10px]"></i><span>13,886 كود عطل بالعربية</span></li>
+<li class="flex gap-2"><i class="fa-solid fa-check text-amber-400 mt-1 text-[10px]"></i><span>كل الميزات مفتوحة</span></li>
+<li class="flex gap-2"><i class="fa-solid fa-check text-amber-400 mt-1 text-[10px]"></i><span>تحديثات مجانية للأبد</span></li>
 </ul>
-<div class="bg-black/40 border border-emerald-500/20 rounded-xl p-2.5 mb-4 space-y-1.5">
+<div class="bg-black/60 border border-amber-500/20 rounded-xl p-2.5 mb-4 space-y-1.5">
 <div class="flex justify-between items-center text-[10px]">
 <span class="text-gray-500">القيمة الحقيقية</span>
 <span class="text-gray-500 line-through">6,000 دج</span>
 </div>
 <div class="flex justify-between items-center text-[11px]">
-<span class="text-emerald-300 font-bold">🎉 توفيرك</span>
-<span class="text-emerald-400 font-black">2,000 دج</span>
+<span class="text-amber-300 font-bold">🎉 توفيرك</span>
+<span class="text-amber-400 font-black">2,000 دج</span>
 </div>
 </div>
-<a href="https://wa.me/213696799945?text=أريد كود التفعيل فقط" target="_blank" class="block text-center bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 rounded-xl transition text-sm">اطلب الكود</a>
+<a href="https://wa.me/213696799945?text=أريد كود التفعيل فقط" target="_blank" class="block text-center bg-zinc-800 hover:bg-zinc-700 text-white font-bold py-3 rounded-xl transition text-sm">اطلب الكود</a>
 </div>
 
 <!-- ─── KINGBOLEN ─── -->
-<div class="price-card bg-slate-900 border-2 border-slate-800 rounded-3xl p-6">
+<div class="price-card bg-zinc-900 border-2 border-zinc-800 hover:border-amber-500/50 rounded-3xl p-6">
 <div class="text-center mb-4">
 <div class="text-sm text-gray-400 font-bold mb-2">🔧 خيار اقتصادي</div>
 <div class="text-xl font-black mb-1">KINGBOLEN</div>
@@ -210,26 +210,26 @@ nav,footer,section{position:relative;z-index:1}
 <div class="text-xs text-gray-500">دج — شاملة الشحن</div>
 </div>
 <ul class="space-y-2 text-xs mb-4 flex-1">
-<li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1 text-[10px]"></i><span>جهاز KINGBOLEN أصلي</span></li>
-<li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1 text-[10px]"></i><span>Bluetooth 5.0</span></li>
-<li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1 text-[10px]"></i><span>9 بروتوكولات OBD2</span></li>
-<li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1 text-[10px]"></i><span>كود تفعيل مدى الحياة</span></li>
+<li class="flex gap-2"><i class="fa-solid fa-check text-amber-400 mt-1 text-[10px]"></i><span>جهاز KINGBOLEN أصلي</span></li>
+<li class="flex gap-2"><i class="fa-solid fa-check text-amber-400 mt-1 text-[10px]"></i><span>Bluetooth 5.0</span></li>
+<li class="flex gap-2"><i class="fa-solid fa-check text-amber-400 mt-1 text-[10px]"></i><span>9 بروتوكولات OBD2</span></li>
+<li class="flex gap-2"><i class="fa-solid fa-check text-amber-400 mt-1 text-[10px]"></i><span>كود تفعيل مدى الحياة</span></li>
 </ul>
-<div class="bg-black/40 border border-emerald-500/20 rounded-xl p-2.5 mb-4 space-y-1.5">
+<div class="bg-black/60 border border-amber-500/20 rounded-xl p-2.5 mb-4 space-y-1.5">
 <div class="flex justify-between items-center text-[10px]">
 <span class="text-gray-500">القيمة الحقيقية</span>
 <span class="text-gray-500 line-through">10,800 دج</span>
 </div>
 <div class="flex justify-between items-center text-[11px]">
-<span class="text-emerald-300 font-bold">🎉 توفيرك</span>
-<span class="text-emerald-400 font-black">3,300 دج</span>
+<span class="text-amber-300 font-bold">🎉 توفيرك</span>
+<span class="text-amber-400 font-black">3,300 دج</span>
 </div>
 </div>
-<a href="https://wa.me/213696799945?text=أريد جهاز KINGBOLEN" target="_blank" class="block text-center bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 rounded-xl transition text-sm">اطلب الآن</a>
+<a href="https://wa.me/213696799945?text=أريد جهاز KINGBOLEN" target="_blank" class="block text-center bg-zinc-800 hover:bg-zinc-700 text-white font-bold py-3 rounded-xl transition text-sm">اطلب الآن</a>
 </div>
 
 <!-- ─── KONNWEI 906 ─── -->
-<div class="price-card bg-slate-900 border-2 border-slate-800 rounded-3xl p-6">
+<div class="price-card bg-zinc-900 border-2 border-zinc-800 hover:border-amber-500/50 rounded-3xl p-6">
 <div class="text-center mb-4">
 <div class="text-sm text-gray-400 font-bold mb-2">⚡ بلوتوث 5.2 الأحدث</div>
 <div class="text-xl font-black mb-1">KONNWEI 906</div>
@@ -238,51 +238,51 @@ nav,footer,section{position:relative;z-index:1}
 <div class="text-xs text-gray-500">دج — شاملة الشحن</div>
 </div>
 <ul class="space-y-2 text-xs mb-4 flex-1">
-<li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1 text-[10px]"></i><span>جهاز KONNWEI 906</span></li>
-<li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1 text-[10px]"></i><span>Bluetooth 5.2 الأسرع</span></li>
-<li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1 text-[10px]"></i><span>اتصال مستقر</span></li>
-<li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1 text-[10px]"></i><span>كود تفعيل مدى الحياة</span></li>
+<li class="flex gap-2"><i class="fa-solid fa-check text-amber-400 mt-1 text-[10px]"></i><span>جهاز KONNWEI 906</span></li>
+<li class="flex gap-2"><i class="fa-solid fa-check text-amber-400 mt-1 text-[10px]"></i><span>Bluetooth 5.2 الأسرع</span></li>
+<li class="flex gap-2"><i class="fa-solid fa-check text-amber-400 mt-1 text-[10px]"></i><span>اتصال مستقر</span></li>
+<li class="flex gap-2"><i class="fa-solid fa-check text-amber-400 mt-1 text-[10px]"></i><span>كود تفعيل مدى الحياة</span></li>
 </ul>
-<div class="bg-black/40 border border-emerald-500/20 rounded-xl p-2.5 mb-4 space-y-1.5">
+<div class="bg-black/60 border border-amber-500/20 rounded-xl p-2.5 mb-4 space-y-1.5">
 <div class="flex justify-between items-center text-[10px]">
 <span class="text-gray-500">القيمة الحقيقية</span>
 <span class="text-gray-500 line-through">11,800 دج</span>
 </div>
 <div class="flex justify-between items-center text-[11px]">
-<span class="text-emerald-300 font-bold">🎉 توفيرك</span>
-<span class="text-emerald-400 font-black">2,800 دج</span>
+<span class="text-amber-300 font-bold">🎉 توفيرك</span>
+<span class="text-amber-400 font-black">2,800 دج</span>
 </div>
 </div>
-<a href="https://wa.me/213696799945?text=أريد جهاز KONNWEI 906" target="_blank" class="block text-center bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 rounded-xl transition text-sm">اطلب الآن</a>
+<a href="https://wa.me/213696799945?text=أريد جهاز KONNWEI 906" target="_blank" class="block text-center bg-zinc-800 hover:bg-zinc-700 text-white font-bold py-3 rounded-xl transition text-sm">اطلب الآن</a>
 </div>
 
-<!-- ─── MAXOBD PRO ─── -->
-<div class="price-card bg-slate-900 border-2 border-amber-500/40 rounded-3xl p-6">
+<!-- ─── MAXOBD PRO (بلاتيني مميز) ─── -->
+<div class="price-card bg-gradient-to-br from-zinc-900 to-black border-2 border-zinc-300/40 hover:border-zinc-200/70 rounded-3xl p-6 shadow-lg shadow-zinc-100/5">
 <div class="text-center mb-4">
-<div class="text-sm text-amber-400 font-bold mb-2">👑 للاحترافيين</div>
-<div class="text-xl font-black mb-1">KONNWEI MAXOBD PRO</div>
-<div class="mb-3"><span class="spec-badge" style="background:rgba(245,158,11,.15);border-color:rgba(245,158,11,.3);color:#fbbf24">أعلى مواصفات</span></div>
+<div class="text-sm text-zinc-200 font-bold mb-2">👑 للاحترافيين</div>
+<div class="text-xl font-black mb-1 text-white">KONNWEI MAXOBD PRO</div>
+<div class="mb-3"><span class="spec-badge" style="background:rgba(229,231,235,.15);border-color:rgba(229,231,235,.4);color:#f4f4f5">أعلى مواصفات</span></div>
 <div class="text-4xl font-black grad-txt mb-1">18,000</div>
-<div class="text-xs text-gray-500">دج — شاملة الشحن</div>
+<div class="text-xs text-gray-400">دج — شاملة الشحن</div>
 </div>
 <ul class="space-y-2 text-xs mb-4 flex-1">
-<li class="flex gap-2"><i class="fa-solid fa-check text-amber-400 mt-1 text-[10px]"></i><span>KONNWEI MAXOBD PRO</span></li>
-<li class="flex gap-2"><i class="fa-solid fa-check text-amber-400 mt-1 text-[10px]"></i><span>أعلى مواصفات تقنية</span></li>
-<li class="flex gap-2"><i class="fa-solid fa-check text-amber-400 mt-1 text-[10px]"></i><span>مثالي للورشات</span></li>
-<li class="flex gap-2"><i class="fa-solid fa-check text-amber-400 mt-1 text-[10px]"></i><span>كود تفعيل مدى الحياة</span></li>
-<li class="flex gap-2"><i class="fa-solid fa-check text-amber-400 mt-1 text-[10px]"></i><span>دعم مخصص</span></li>
+<li class="flex gap-2"><i class="fa-solid fa-check text-zinc-200 mt-1 text-[10px]"></i><span>KONNWEI MAXOBD PRO</span></li>
+<li class="flex gap-2"><i class="fa-solid fa-check text-zinc-200 mt-1 text-[10px]"></i><span>أعلى مواصفات تقنية</span></li>
+<li class="flex gap-2"><i class="fa-solid fa-check text-zinc-200 mt-1 text-[10px]"></i><span>مثالي للورشات</span></li>
+<li class="flex gap-2"><i class="fa-solid fa-check text-zinc-200 mt-1 text-[10px]"></i><span>كود تفعيل مدى الحياة</span></li>
+<li class="flex gap-2"><i class="fa-solid fa-check text-zinc-200 mt-1 text-[10px]"></i><span>دعم مخصص</span></li>
 </ul>
-<div class="bg-black/40 border border-amber-500/20 rounded-xl p-2.5 mb-4 space-y-1.5">
+<div class="bg-black/60 border border-zinc-300/20 rounded-xl p-2.5 mb-4 space-y-1.5">
 <div class="flex justify-between items-center text-[10px]">
 <span class="text-gray-500">القيمة الحقيقية</span>
 <span class="text-gray-500 line-through">19,800 دج</span>
 </div>
 <div class="flex justify-between items-center text-[11px]">
-<span class="text-amber-300 font-bold">🎉 توفيرك</span>
-<span class="text-amber-400 font-black">1,800 دج</span>
+<span class="text-zinc-200 font-bold">🎉 توفيرك</span>
+<span class="text-white font-black">1,800 دج</span>
 </div>
 </div>
-<a href="https://wa.me/213696799945?text=أريد جهاز KONNWEI MAXOBD PRO" target="_blank" class="block text-center bg-gradient-to-l from-amber-500 to-orange-500 text-white font-black py-3 rounded-xl transition text-sm">اطلب الآن</a>
+<a href="https://wa.me/213696799945?text=أريد جهاز KONNWEI MAXOBD PRO" target="_blank" class="block text-center bg-gradient-to-l from-zinc-200 via-white to-zinc-300 hover:from-white hover:to-zinc-200 text-black font-black py-3 rounded-xl transition text-sm">اطلب الآن</a>
 </div>
 
 </div>
@@ -291,7 +291,7 @@ nav,footer,section{position:relative;z-index:1}
 </section>
 
 <!-- ═══ VALUE SECTION ═══ -->
-<section class="py-20 px-4 bg-slate-900/30">
+<section class="py-20 px-4 bg-zinc-900/30">
 <div class="max-w-5xl mx-auto">
 <div class="text-center mb-12">
 <div class="inline-flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 rounded-full px-4 py-1.5 text-xs font-bold text-amber-300 mb-4">
@@ -303,39 +303,39 @@ nav,footer,section{position:relative;z-index:1}
 
 <div class="grid md:grid-cols-2 gap-6 mb-10">
 
-<div class="bg-gradient-to-br from-slate-900 to-slate-950 border-2 border-purple-500/40 rounded-3xl p-7">
+<div class="bg-gradient-to-br from-zinc-900 to-black border-2 border-amber-500/40 rounded-3xl p-7">
 <h3 class="text-xl font-black mb-5 flex items-center gap-2">
-<i class="fa-solid fa-box-open text-purple-400"></i> ما تحصل عليه فعلياً
+<i class="fa-solid fa-box-open text-amber-400"></i> ما تحصل عليه فعلياً
 </h3>
 <div class="space-y-4">
-<div class="flex items-start gap-3 bg-black/30 rounded-xl p-4"><div class="text-3xl">🔌</div><div class="flex-1"><div class="font-bold mb-1">جهاز KONNWEI 906 أصلي</div><div class="text-xs text-gray-400">مستورد من الصين بجودة عالية</div><div class="text-sm font-bold text-emerald-400 mt-2">القيمة: ~6,000 دج</div></div></div>
-<div class="flex items-start gap-3 bg-black/30 rounded-xl p-4"><div class="text-3xl">💻</div><div class="flex-1"><div class="font-bold mb-1">موقع CheckDiga Pro كامل</div><div class="text-xs text-gray-400">13,886 كود عربي + 8 ميزات احترافية</div><div class="text-sm font-bold text-emerald-400 mt-2">القيمة: ~5,000 دج</div></div></div>
-<div class="flex items-start gap-3 bg-black/30 rounded-xl p-4"><div class="text-3xl">💬</div><div class="flex-1"><div class="font-bold mb-1">دعم فني بالعربية</div><div class="text-xs text-gray-400">واتساب مباشر — نساعدك في كل خطوة</div><div class="text-sm font-bold text-emerald-400 mt-2">القيمة: غير محدودة</div></div></div>
-<div class="flex items-start gap-3 bg-black/30 rounded-xl p-4"><div class="text-3xl">🚚</div><div class="flex-1"><div class="font-bold mb-1">توصيل سريع لكل الجزائر</div><div class="text-xs text-gray-400">24-72 ساعة للولايات الكبرى</div><div class="text-sm font-bold text-emerald-400 mt-2">القيمة: ~800 دج</div></div></div>
+<div class="flex items-start gap-3 bg-black/40 rounded-xl p-4"><div class="text-3xl">🔌</div><div class="flex-1"><div class="font-bold mb-1">جهاز KONNWEI 906 أصلي</div><div class="text-xs text-gray-400">مستورد من الصين بجودة عالية</div><div class="text-sm font-bold text-amber-400 mt-2">القيمة: ~6,000 دج</div></div></div>
+<div class="flex items-start gap-3 bg-black/40 rounded-xl p-4"><div class="text-3xl">💻</div><div class="flex-1"><div class="font-bold mb-1">موقع CheckDiga Pro كامل</div><div class="text-xs text-gray-400">13,886 كود عربي + 8 ميزات احترافية</div><div class="text-sm font-bold text-amber-400 mt-2">القيمة: ~5,000 دج</div></div></div>
+<div class="flex items-start gap-3 bg-black/40 rounded-xl p-4"><div class="text-3xl">💬</div><div class="flex-1"><div class="font-bold mb-1">دعم فني بالعربية</div><div class="text-xs text-gray-400">واتساب مباشر — نساعدك في كل خطوة</div><div class="text-sm font-bold text-amber-400 mt-2">القيمة: غير محدودة</div></div></div>
+<div class="flex items-start gap-3 bg-black/40 rounded-xl p-4"><div class="text-3xl">🚚</div><div class="flex-1"><div class="font-bold mb-1">توصيل سريع لكل الجزائر</div><div class="text-xs text-gray-400">24-72 ساعة للولايات الكبرى</div><div class="text-sm font-bold text-amber-400 mt-2">القيمة: ~800 دج</div></div></div>
 </div>
-<div class="mt-5 pt-5 border-t border-slate-700">
+<div class="mt-5 pt-5 border-t border-zinc-700">
 <div class="flex justify-between items-center">
 <span class="text-gray-300">القيمة الإجمالية:</span>
-<span class="text-2xl font-black text-emerald-400">~11,800 دج</span>
+<span class="text-2xl font-black grad-txt">~11,800 دج</span>
 </div>
 </div>
 </div>
 
-<div class="bg-gradient-to-br from-emerald-900/40 to-slate-900 border-2 border-emerald-500/40 rounded-3xl p-7 text-center flex flex-col justify-center">
-<div class="text-sm text-emerald-300 font-bold mb-2">🎉 أنت توفّر</div>
+<div class="bg-gradient-to-br from-amber-900/30 to-black border-2 border-amber-500/40 rounded-3xl p-7 text-center flex flex-col justify-center">
+<div class="text-sm text-amber-300 font-bold mb-2">🎉 أنت توفّر</div>
 <div class="text-5xl font-black grad-txt mb-2">2,800</div>
 <div class="text-sm text-gray-400">دج مقارنة بالقيمة الحقيقية</div>
-<div class="mt-4 pt-4 border-t border-emerald-700/30">
+<div class="mt-4 pt-4 border-t border-amber-700/30">
 <div class="flex justify-between text-sm"><span class="text-gray-400">القيمة الحقيقية:</span><span class="font-bold text-gray-300">~11,800 دج</span></div>
-<div class="flex justify-between text-sm mt-2"><span class="text-gray-400">سعرك اليوم:</span><span class="font-bold text-emerald-400 text-lg">9,000 دج</span></div>
+<div class="flex justify-between text-sm mt-2"><span class="text-gray-400">سعرك اليوم:</span><span class="font-bold text-amber-400 text-lg">9,000 دج</span></div>
 </div>
 </div>
 
 </div>
 
 <div class="grid md:grid-cols-2 gap-4">
-<div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 text-center"><div class="text-4xl mb-3">⚡</div><div class="font-bold mb-1">توصيل سريع</div><div class="text-xs text-gray-400">لا انتظار شهر كامل</div></div>
-<div class="bg-slate-900 border border-slate-800 rounded-2xl p-5 text-center"><div class="text-4xl mb-3">💳</div><div class="font-bold mb-1">دفع عند الاستلام</div><div class="text-xs text-gray-400">لا مخاطرة</div></div>
+<div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-5 text-center"><div class="text-4xl mb-3">⚡</div><div class="font-bold mb-1">توصيل سريع</div><div class="text-xs text-gray-400">لا انتظار شهر كامل</div></div>
+<div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-5 text-center"><div class="text-4xl mb-3">💳</div><div class="font-bold mb-1">دفع عند الاستلام</div><div class="text-xs text-gray-400">لا مخاطرة</div></div>
 </div>
 
 </div>
@@ -344,16 +344,16 @@ nav,footer,section{position:relative;z-index:1}
 <!-- ═══ SUPPORT ═══ -->
 <section class="py-16 px-4">
 <div class="max-w-5xl mx-auto">
-<div class="bg-gradient-to-br from-blue-900/30 to-slate-900 border-2 border-blue-500/40 rounded-3xl p-8">
+<div class="bg-gradient-to-br from-zinc-900 to-black border-2 border-amber-500/40 rounded-3xl p-8">
 <div class="text-center mb-6">
 <div class="text-5xl mb-3">🤝</div>
 <h3 class="text-2xl md:text-3xl font-black mb-3">خدمة عملاء في خدمتك</h3>
 <p class="text-gray-300 max-w-2xl mx-auto">فريقنا جاهز لمساعدتك قبل الشراء وبعده — عبر واتساب مباشرة.</p>
 </div>
 <div class="grid sm:grid-cols-3 gap-4 text-center">
-<div class="bg-black/30 rounded-xl p-4"><i class="fa-solid fa-headset text-blue-400 text-2xl mb-2"></i><div class="font-bold text-sm mb-1">دعم فني</div><div class="text-[11px] text-gray-400">نساعدك في تثبيت الجهاز</div></div>
-<div class="bg-black/30 rounded-xl p-4"><i class="fa-solid fa-graduation-cap text-purple-400 text-2xl mb-2"></i><div class="font-bold text-sm mb-1">شرح الاستخدام</div><div class="text-[11px] text-gray-400">دليل مصوّر خطوة بخطوة</div></div>
-<div class="bg-black/30 rounded-xl p-4"><i class="fa-solid fa-clock text-emerald-400 text-2xl mb-2"></i><div class="font-bold text-sm mb-1">رد سريع</div><div class="text-[11px] text-gray-400">خلال ساعات — 7 أيام/الأسبوع</div></div>
+<div class="bg-black/40 rounded-xl p-4"><i class="fa-solid fa-headset text-amber-400 text-2xl mb-2"></i><div class="font-bold text-sm mb-1">دعم فني</div><div class="text-[11px] text-gray-400">نساعدك في تثبيت الجهاز</div></div>
+<div class="bg-black/40 rounded-xl p-4"><i class="fa-solid fa-graduation-cap text-zinc-300 text-2xl mb-2"></i><div class="font-bold text-sm mb-1">شرح الاستخدام</div><div class="text-[11px] text-gray-400">دليل مصوّر خطوة بخطوة</div></div>
+<div class="bg-black/40 rounded-xl p-4"><i class="fa-solid fa-clock text-yellow-400 text-2xl mb-2"></i><div class="font-bold text-sm mb-1">رد سريع</div><div class="text-[11px] text-gray-400">خلال ساعات — 7 أيام/الأسبوع</div></div>
 </div>
 <div class="text-center mt-6">
 <a href="https://wa.me/213696799945?text=السلام عليكم، أريد معلومات عن خدمة العملاء" target="_blank" class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-6 py-3 rounded-xl transition">
@@ -365,7 +365,7 @@ nav,footer,section{position:relative;z-index:1}
 </section>
 
 <!-- ═══ FAQ ═══ -->
-<section class="py-20 px-4 bg-slate-900/30">
+<section class="py-20 px-4 bg-zinc-900/30">
 <div class="max-w-3xl mx-auto">
 <h2 class="text-3xl md:text-4xl font-black text-center mb-3">الأسئلة الشائعة</h2>
 <p class="text-gray-400 text-center mb-12">كل ما تريد معرفته قبل الطلب</p>
@@ -381,7 +381,7 @@ nav,footer,section{position:relative;z-index:1}
 <!-- ═══ CTA FINAL ═══ -->
 <section class="py-20 px-4">
 <div class="max-w-4xl mx-auto text-center">
-<div class="bg-gradient-to-br from-blue-900/40 via-purple-900/40 to-slate-900 border-2 border-purple-500/40 rounded-3xl p-10 md:p-14">
+<div class="bg-gradient-to-br from-zinc-900 via-black to-zinc-900 border-2 border-amber-500/40 rounded-3xl p-10 md:p-14">
 <h2 class="text-3xl md:text-5xl font-black mb-4">جاهز تفحص سيارتك بنفسك؟</h2>
 <p class="text-lg text-gray-400 mb-8">اطلب الآن — دفع عند الاستلام، توصيل لكل الجزائر</p>
 <a href="https://wa.me/213696799945?text=السلام عليكم، أريد شراء جهاز فحص السيارات" target="_blank" class="btn-pulse inline-flex items-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white font-black px-10 py-5 rounded-2xl text-xl transition">
@@ -392,22 +392,22 @@ nav,footer,section{position:relative;z-index:1}
 </section>
 
 <!-- ═══ FOOTER ═══ -->
-<footer class="border-t border-slate-800 py-10 px-4 text-center">
+<footer class="border-t border-zinc-800 py-10 px-4 text-center">
 <div class="flex items-center justify-center gap-2 mb-3">
-<i class="fa-solid fa-wrench text-blue-400 text-2xl"></i>
+<i class="fa-solid fa-wrench text-amber-400 text-2xl"></i>
 <span class="text-xl font-black">CheckDiga Pro</span>
 </div>
 <p class="text-xs text-gray-500 mb-4">أداة فحص سيارات احترافية</p>
 <div class="flex justify-center gap-4 text-xl mb-4">
 <a href="https://wa.me/213696799945" target="_blank" class="text-emerald-400 hover:text-emerald-300"><i class="fa-brands fa-whatsapp"></i></a>
-<a href="#" class="text-blue-400 hover:text-blue-300"><i class="fa-brands fa-facebook"></i></a>
+<a href="#" class="text-zinc-300 hover:text-white"><i class="fa-brands fa-facebook"></i></a>
 <a href="#" class="text-pink-400 hover:text-pink-300"><i class="fa-brands fa-instagram"></i></a>
 </div>
 <div class="text-sm text-gray-400 space-y-2 mb-4">
-<p><i class="fa-solid fa-envelope text-blue-400"></i> <a href="mailto:ishakdiga55@gmail.com" class="hover:text-white transition">ishakdiga55@gmail.com</a></p>
+<p><i class="fa-solid fa-envelope text-amber-400"></i> <a href="mailto:ishakdiga55@gmail.com" class="hover:text-white transition">ishakdiga55@gmail.com</a></p>
 <p><i class="fa-solid fa-phone text-emerald-400"></i> <a href="tel:+213696799945" class="hover:text-white transition" dir="ltr">+213 696 799 945</a></p>
 </div>
-<p class="text-xs text-gray-600 border-t border-slate-800 pt-4">2026 — صنعة بحب في الجزائر 🇩🇿</p>
+<p class="text-xs text-gray-600 border-t border-zinc-800 pt-4">2026 — صنعة بحب في الجزائر 🇩🇿</p>
 </footer>
 
 <script>
