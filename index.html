@@ -28,6 +28,7 @@ body{font-family:'Cairo',sans-serif;background:#0a0f1e;color:#f1f5f9;margin:0}
 .faq-item.open .faq-a{max-height:400px;padding:0 20px 20px}
 .faq-item.open .faq-arrow{transform:rotate(180deg)}
 .faq-arrow{transition:.3s}
+.hero-glow{filter:drop-shadow(0 0 40px rgba(139,92,246,.55)) drop-shadow(0 0 20px rgba(59,130,246,.4))}
 body::before{content:'';position:fixed;inset:0;background:radial-gradient(circle at 20% 20%,rgba(59,130,246,.08),transparent 50%),radial-gradient(circle at 80% 80%,rgba(139,92,246,.08),transparent 50%);pointer-events:none;z-index:0}
 nav,footer,section{position:relative;z-index:1}
 </style>
@@ -57,14 +58,23 @@ nav,footer,section{position:relative;z-index:1}
 <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
 متوفر الآن — توصيل لكل الولايات
 </div>
-<h1 class="text-4xl md:text-6xl font-black leading-tight mb-5">
-افحص سيارتك <span class="grad-txt">بنفسك</span><br>
-من هاتفك — بدون ورشة
+
+<!-- العنوان الصغير -->
+<h1 class="text-2xl md:text-3xl font-black mb-3 text-gray-300">
+افحص سيارتك <span class="grad-txt">بنفسك</span> من هاتفك
 </h1>
-<p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-8 leading-relaxed">
-جهاز فحص احترافي صغير، يُوصَل بمنفذ السيارة، ويقرأ كل الأعطال على هاتفك في ثوانٍ.<br>
-<b class="text-white">+13,886 كود عطل</b> — بالعربية.
-</p>
+
+<!-- الرقم العملاق -->
+<div class="text-7xl md:text-9xl font-black grad-txt hero-glow leading-none mb-2">
+13,886
+</div>
+<div class="text-3xl md:text-5xl font-black mb-4">
+تشخيص <span class="grad-txt">أعطال</span>
+</div>
+<div class="text-sm md:text-base text-gray-400 mb-8">
+كود عطل بالعربية — يُقرأ في ثوانٍ من هاتفك
+</div>
+
 <div class="flex flex-col sm:flex-row gap-3 justify-center mb-10">
 <a href="https://wa.me/213696799945?text=السلام عليكم، أريد شراء جهاز فحص السيارات" target="_blank" class="btn-pulse bg-gradient-to-l from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white font-black px-8 py-4 rounded-2xl flex items-center justify-center gap-3 text-lg transition">
 <i class="fa-brands fa-whatsapp text-2xl"></i> اطلب جهازك الآن
@@ -206,10 +216,10 @@ nav,footer,section{position:relative;z-index:1}
 <div class="text-sm text-gray-400 font-bold mb-2">🔧 خيار اقتصادي</div>
 <div class="text-xl font-black mb-1">KINGBOLEN</div>
 <div class="mb-3"><span class="spec-badge">BT 5.0</span><span class="spec-badge">9 بروتوكولات</span><span class="spec-badge">PIC18F25K80</span></div>
-<div class="text-4xl font-black grad-t-xt mb-1">7,500</div>
-<div class500="text-xs text-gray-500/">دج — شاملة الشحن</div>
+<div class="text-4xl font-black grad-txt mb-1">7,500</div>
+<div class="text-xs text-gray-500">دج — شاملة الشحن</div>
 </div>
-<ul class="space-y-2 text20 rounded-xs mb-4 flex-1">
+<ul class="space-y-2 text-xs mb-4 flex-1">
 <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1 text-[10px]"></i><span>جهاز KINGBOLEN أصلي</span></li>
 <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1 text-[10px]"></i><span>Bluetooth 5.0</span></li>
 <li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1 text-[10px]"></i><span>9 بروتوكولات OBD2</span></li>
@@ -272,7 +282,7 @@ nav,footer,section{position:relative;z-index:1}
 <li class="flex gap-2"><i class="fa-solid fa-check text-amber-400 mt-1 text-[10px]"></i><span>كود تفعيل مدى الحياة</span></li>
 <li class="flex gap-2"><i class="fa-solid fa-check text-amber-400 mt-1 text-[10px]"></i><span>دعم مخصص</span></li>
 </ul>
-<div class="bg-black/40 border border-amber-xl p-2.5 mb-4 space-y-1.5">
+<div class="bg-black/40 border border-amber-500/20 rounded-xl p-2.5 mb-4 space-y-1.5">
 <div class="flex justify-between items-center text-[10px]">
 <span class="text-gray-500">القيمة الحقيقية</span>
 <span class="text-gray-500 line-through">19,800 دج</span>
