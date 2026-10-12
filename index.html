@@ -35,62 +35,58 @@ body{font-family:'Cairo',sans-serif;background:#0a0f1e;color:#f1f5f9;margin:0}
 body::before{content:'';position:fixed;inset:0;background:radial-gradient(circle at 20% 20%,rgba(59,130,246,.12),transparent 50%),radial-gradient(circle at 80% 80%,rgba(14,165,233,.08),transparent 50%);pointer-events:none;z-index:0}
 nav,footer,section{position:relative;z-index:1}
 
-/* ═══ شارات العلامات ═══ */
-.brand-badge{
-  display:inline-flex;
-  align-items:center;
+/* ═══ شارات العلامات الثابتة ═══ */
+.brands-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
   gap:8px;
-  background:linear-gradient(135deg,#0f172a,#1e293b);
-  border:1px solid #1e293b;
-  color:#cbd5e1;
+}
+@media (min-width:640px){
+  .brands-grid{grid-template-columns:repeat(4,1fr);gap:10px}
+}
+@media (min-width:768px){
+  .brands-grid{grid-template-columns:repeat(6,1fr)}
+}
+.brand-chip{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  background:#1e293b;
+  border:1px solid #334155;
+  color:#e2e8f0;
   font-weight:700;
-  font-size:14px;
-  padding:10px 18px;
-  border-radius:9999px;
-  margin:0 6px;
-  white-space:nowrap;
+  font-size:12px;
+  padding:10px 6px;
+  border-radius:12px;
   transition:.3s;
+  text-align:center;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.brand-chip i{
+  color:#60a5fa;
+  font-size:12px;
   flex-shrink:0;
 }
-.brand-badge:hover{
+.brand-chip:hover{
   border-color:#3b82f6;
   color:#fff;
-  background:linear-gradient(135deg,#1e3a8a,#1e40af);
-  box-shadow:0 0 20px rgba(59,130,246,.35);
-  transform:translateY(-2px);
+  background:#1e3a8a;
+  box-shadow:0 0 20px rgba(59,130,246,.4);
+  transform:translateY(-3px);
 }
-
-/* ═══ الشريط المتحرك ═══ */
-.marquee-wrap{
-  position:relative;
-  width:100%;
-  overflow:hidden;
-  padding:6px 0;
-  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
-  mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
-}
-.marquee{
+.brand-region{
   display:flex;
-  width:max-content;
-  will-change:transform;
+  align-items:center;
+  gap:8px;
+  margin-bottom:12px;
+  padding:0 4px;
 }
-.marquee-ltr{
-  animation:scrollLTR 40s linear infinite;
-}
-.marquee-rtl{
-  animation:scrollRTL 45s linear infinite;
-}
-.marquee-wrap:hover .marquee{
-  animation-play-state:paused;
-}
-@keyframes scrollLTR{
-  0%{transform:translateX(0)}
-  100%{transform:translateX(-50%)}
-}
-@keyframes scrollRTL{
-  0%{transform:translateX(-50%)}
-  100%{transform:translateX(0)}
-}
+.brand-region .flag{font-size:20px;line-height:1}
+.brand-region .label{font-weight:800;font-size:13px;color:#94a3b8}
+.brand-region .line{flex:1;height:1px;background:linear-gradient(90deg,transparent,#334155,transparent)}
 </style>
 </head>
 <body>
@@ -285,7 +281,6 @@ nav,footer,section{position:relative;z-index:1}
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
 
-<!-- كود التفعيل -->
 <div class="price-card bg-slate-900 border-2 border-slate-800 hover:border-blue-500/50 rounded-3xl p-6">
 <div class="text-center mb-5">
 <div class="text-sm text-gray-400 font-bold mb-2">🔑 عندك جهاز؟</div>
@@ -313,7 +308,6 @@ nav,footer,section{position:relative;z-index:1}
 <a href="https://wa.me/213696799945?text=أريد كود التفعيل فقط" target="_blank" class="block text-center bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 rounded-xl transition text-sm">اطلب الكود</a>
 </div>
 
-<!-- KINGBOLEN -->
 <div class="price-card bg-slate-900 border-2 border-slate-800 hover:border-blue-500/50 rounded-3xl p-6">
 <div class="text-center mb-4">
 <div class="text-sm text-gray-400 font-bold mb-2">🔧 خيار اقتصادي</div>
@@ -341,7 +335,6 @@ nav,footer,section{position:relative;z-index:1}
 <a href="https://wa.me/213696799945?text=أريد جهاز KINGBOLEN" target="_blank" class="block text-center bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 rounded-xl transition text-sm">اطلب الآن</a>
 </div>
 
-<!-- KONNWEI 906 -->
 <div class="price-card bg-slate-900 border-2 border-slate-800 hover:border-blue-500/50 rounded-3xl p-6">
 <div class="text-center mb-4">
 <div class="text-sm text-gray-400 font-bold mb-2">⚡ بلوتوث 5.2 الأحدث</div>
@@ -369,7 +362,6 @@ nav,footer,section{position:relative;z-index:1}
 <a href="https://wa.me/213696799945?text=أريد جهاز KONNWEI 906" target="_blank" class="block text-center bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 rounded-xl transition text-sm">اطلب الآن</a>
 </div>
 
-<!-- MAXOBD PRO -->
 <div class="price-card bg-slate-900 border-2 border-amber-500/40 rounded-3xl p-6">
 <div class="text-center mb-4">
 <div class="text-sm text-amber-400 font-bold mb-2">👑 للاحترافيين</div>
@@ -478,79 +470,210 @@ nav,footer,section{position:relative;z-index:1}
 </section>
 
 <!-- ═══ SUPPORTED BRANDS ═══ -->
-<section class="py-20 px-4 bg-slate-900/30 overflow-hidden">
+<section class="py-20 px-4 bg-slate-900/30">
 <div class="max-w-6xl mx-auto">
 <div class="text-center mb-12">
 <div class="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 rounded-full px-4 py-1.5 text-xs font-bold text-blue-300 mb-4">
 <i class="fa-solid fa-car"></i> توافق واسع
 </div>
-<h2 class="text-3xl md:text-4xl font-black mb-3">تعمل مع <span class="grad-txt">جميع العلامات</span></h2>
-<p class="text-gray-400 max-w-2xl mx-auto">مهما كانت سيارتك — يابانية، أوروبية، كورية، أمريكية أو صينية — الجهاز يتعرف عليها فوراً</p>
+<h2 class="text-3xl md:text-4xl font-black mb-3">تعمل مع <span class="grad-txt">أكثر من 100 علامة</span></h2>
+<p class="text-gray-400 max-w-2xl mx-auto">من الأوروبية الفاخرة إلى الآسيوية والصينية — الجهاز يتعرف عليها جميعاً فوراً</p>
+</div>
+
+<!-- 🇩🇪 ألمانية -->
+<div class="mb-8">
+<div class="brand-region">
+<span class="flag">🇩🇪</span>
+<span class="label">ألمانية</span>
+<div class="line"></div>
+</div>
+<div class="brands-grid">
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Volkswagen</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> BMW</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Mercedes-Benz</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Audi</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Opel</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Porsche</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Smart</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Maybach</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Borgward</span>
 </div>
 </div>
 
-<!-- 🎞️ الشريط المتحرك 1 (يمين → يسار) -->
-<div class="marquee-wrap mb-4">
-<div class="marquee marquee-ltr">
-<span class="brand-badge">🚗 Toyota</span>
-<span class="brand-badge">🚗 Renault</span>
-<span class="brand-badge">🚗 Peugeot</span>
-<span class="brand-badge">🚗 Hyundai</span>
-<span class="brand-badge">🚗 Kia</span>
-<span class="brand-badge">🚗 Volkswagen</span>
-<span class="brand-badge">🚗 Dacia</span>
-<span class="brand-badge">🚗 Citroën</span>
-<span class="brand-badge">🚗 Fiat</span>
-<span class="brand-badge">🚗 Seat</span>
-<span class="brand-badge">🚗 Skoda</span>
-<span class="brand-badge">🚗 Nissan</span>
-<span class="brand-badge">🚗 Toyota</span>
-<span class="brand-badge">🚗 Renault</span>
-<span class="brand-badge">🚗 Peugeot</span>
-<span class="brand-badge">🚗 Hyundai</span>
-<span class="brand-badge">🚗 Kia</span>
-<span class="brand-badge">🚗 Volkswagen</span>
-<span class="brand-badge">🚗 Dacia</span>
-<span class="brand-badge">🚗 Citroën</span>
-<span class="brand-badge">🚗 Fiat</span>
-<span class="brand-badge">🚗 Seat</span>
-<span class="brand-badge">🚗 Skoda</span>
-<span class="brand-badge">🚗 Nissan</span>
+<!-- 🇫🇷 فرنسية -->
+<div class="mb-8">
+<div class="brand-region">
+<span class="flag">🇫🇷</span>
+<span class="label">فرنسية</span>
+<div class="line"></div>
+</div>
+<div class="brands-grid">
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Renault</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Peugeot</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Citroën</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Dacia</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Alpine</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Bugatti</span>
 </div>
 </div>
 
-<!-- 🎞️ الشريط المتحرك 2 (يسار → يمين) -->
-<div class="marquee-wrap mb-10">
-<div class="marquee marquee-rtl">
-<span class="brand-badge">🚙 Ford</span>
-<span class="brand-badge">🚙 Chevrolet</span>
-<span class="brand-badge">🚙 Mercedes-Benz</span>
-<span class="brand-badge">🚙 BMW</span>
-<span class="brand-badge">🚙 Audi</span>
-<span class="brand-badge">🚙 Honda</span>
-<span class="brand-badge">🚙 Mitsubishi</span>
-<span class="brand-badge">🚙 Suzuki</span>
-<span class="brand-badge">🚙 Opel</span>
-<span class="brand-badge">🚙 Jeep</span>
-<span class="brand-badge">🚙 Mazda</span>
-<span class="brand-badge">🚙 Volvo</span>
-<span class="brand-badge">🚙 Ford</span>
-<span class="brand-badge">🚙 Chevrolet</span>
-<span class="brand-badge">🚙 Mercedes-Benz</span>
-<span class="brand-badge">🚙 BMW</span>
-<span class="brand-badge">🚙 Audi</span>
-<span class="brand-badge">🚙 Honda</span>
-<span class="brand-badge">🚙 Mitsubishi</span>
-<span class="brand-badge">🚙 Suzuki</span>
-<span class="brand-badge">🚙 Opel</span>
-<span class="brand-badge">🚙 Jeep</span>
-<span class="brand-badge">🚙 Mazda</span>
-<span class="brand-badge">🚙 Volvo</span>
+<!-- 🇮🇹 إيطالية -->
+<div class="mb-8">
+<div class="brand-region">
+<span class="flag">🇮🇹</span>
+<span class="label">إيطالية</span>
+<div class="line"></div>
+</div>
+<div class="brands-grid">
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Fiat</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Alfa Romeo</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Lancia</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Maserati</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Ferrari</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Lamborghini</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Abarth</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Iveco</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Pagani</span>
+</div>
+</div>
+
+<!-- 🇬🇧 بريطانية -->
+<div class="mb-8">
+<div class="brand-region">
+<span class="flag">🇬🇧</span>
+<span class="label">بريطانية</span>
+<div class="line"></div>
+</div>
+<div class="brands-grid">
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Jaguar</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Land Rover</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Mini</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Bentley</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Rolls-Royce</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Aston Martin</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Lotus</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> MG</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> McLaren</span>
+</div>
+</div>
+
+<!-- 🇪🇺 أوروبا أخرى -->
+<div class="mb-8">
+<div class="brand-region">
+<span class="flag">🇪🇺</span>
+<span class="label">أوروبا — أخرى</span>
+<div class="line"></div>
+</div>
+<div class="brands-grid">
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Skoda</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Seat</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Cupra</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Volvo</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Saab</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Koenigsegg</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Polestar</span>
+</div>
+</div>
+
+<!-- 🇯🇵 يابانية -->
+<div class="mb-8">
+<div class="brand-region">
+<span class="flag">🇯🇵</span>
+<span class="label">يابانية</span>
+<div class="line"></div>
+</div>
+<div class="brands-grid">
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Toyota</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Honda</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Nissan</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Mazda</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Mitsubishi</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Suzuki</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Subaru</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Lexus</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Infiniti</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Acura</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Isuzu</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Daihatsu</span>
+</div>
+</div>
+
+<!-- 🇰🇷 كورية -->
+<div class="mb-8">
+<div class="brand-region">
+<span class="flag">🇰🇷</span>
+<span class="label">كورية</span>
+<div class="line"></div>
+</div>
+<div class="brands-grid">
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Hyundai</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Kia</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Genesis</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> SsangYong</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Daewoo</span>
+</div>
+</div>
+
+<!-- 🇺🇸 أمريكية -->
+<div class="mb-8">
+<div class="brand-region">
+<span class="flag">🇺🇸</span>
+<span class="label">أمريكية</span>
+<div class="line"></div>
+</div>
+<div class="brands-grid">
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Ford</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Chevrolet</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Dodge</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Jeep</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Chrysler</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Cadillac</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> GMC</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Buick</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Tesla</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Lincoln</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> RAM</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Hummer</span>
+</div>
+</div>
+
+<!-- 🇨🇳 صينية -->
+<div class="mb-8">
+<div class="brand-region">
+<span class="flag">🇨🇳</span>
+<span class="label">صينية</span>
+<div class="line"></div>
+</div>
+<div class="brands-grid">
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Chery</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Geely</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> BYD</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Great Wall</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Haval</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Changan</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Dongfeng</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> FAW</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> GAC</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> NIO</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> XPeng</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Li Auto</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Hongqi</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Baojun</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Wuling</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> JAC</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Jetour</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Exeed</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Omoda</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Jaecoo</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> MG Roewe</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Lynk & Co</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Zeekr</span>
+<span class="brand-chip"><i class="fa-solid fa-car-side"></i> Leapmotor</span>
 </div>
 </div>
 
 <!-- 📌 ملاحظة الثقة -->
-<div class="max-w-2xl mx-auto px-4">
+<div class="max-w-2xl mx-auto mt-10">
 <div class="bg-gradient-to-br from-blue-900/30 to-slate-900 border-2 border-blue-500/40 rounded-2xl p-6 text-center">
 <div class="flex items-center justify-center gap-2 mb-2">
 <i class="fa-solid fa-circle-check text-emerald-400 text-xl"></i>
@@ -560,6 +683,7 @@ nav,footer,section{position:relative;z-index:1}
 </div>
 </div>
 
+</div>
 </section>
 
 <!-- ═══ FAQ ═══ -->
